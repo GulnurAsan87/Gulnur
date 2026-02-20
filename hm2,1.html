@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="sumbit" method="post"><!--Форма отправляется на адрес "sumbit" методом POST -->
+        <fieldset> <!-- Группировка элементов формы рамкой -->
+            <legend>Form</legend> <!-- Заголовок группы полей -->
+
+            <label for="name">Name</label><br> <!-- Подпись для поля имени -->
+            <input type="text" id="name" name="name" required><!-- Поле ввода имени, обязательное -->
+            <label for="email">Email</label><br> <!-- Подпись для email -->
+            <input type="email"> <!-- Поле ввода email -->
+
+            <label for="password">Password</label><br> <!-- Подпись для пароля -->
+            <input type="password"><!-- Поле ввода пароля (скрытые символы) -->
+
+            <button type="submit">Submit</button><br> <!-- Кнопка отправки формы -->
+            <button type="reset">Reset</button> <!-- Кнопка очистки формы -->
+
+            <label for="message">Message</label><br><!-- Подпись для текстового сообщения -->
+            <textarea id="message" name="message" rows="4"
+                cols="50"></textarea><br><!-- Многострочное поле ввода текста -->
+            <label for="country">Country</label><br><!-- Подпись для списка стран -->
+            <select id="country" name="country" required><br><!-- Выпадающий список стран -->
+                <option value="">Select your country</option><br> <!-- Пустой вариант по умолчанию -->
+                <option value="us">United States</option><br><!-- Вариант США -->
+                <option value="kz">Kazakhstan</option><br> <!-- Вариант Казахстан -->
+                <option value="ca">Canada</option><br><!-- Вариант Канада -->
+                <option value="uz">Uzbekistan</option><br><!-- Вариант Узбекистан -->
+                <option value="fr">Franse</option><br><!-- Вариант Франция -->
+
+            </select><!-- Конец списка -->
+        </fieldset><!-- Конец группы -->
+    </form> <!-- Конец формы -->
+</body>
+
+</html>

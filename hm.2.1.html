@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Form</legend>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label><br>
+            <input type="email">
+            <label for="password">Password</label><br>
+
+            <input type="password">
+
+            <button type="submit">Submit</button><br>
+            <button type="reset">Reset</button>
+
+            <label for="message">Message</label><br>
+            <textarea id="message" name="Message" rows="4" cols="50"></textarea><br>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="KZ">Kazakhstan</option>
+                <option value="ca">Canada</option>
+                <option value="us">United States</option>
+                <option value="au">Australia</option>
+
+            </select>
+        </fieldset>
+    </form>
+</body>
+
+</html>
