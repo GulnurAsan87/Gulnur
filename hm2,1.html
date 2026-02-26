@@ -1,43 +1,51 @@
 <!DOCTYPE html>
+<!-- это папка специальный для создания и формирование символов также веб элементов  -->
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <!-- в этом папке содержит данные документы как автор,описание, ссылики и стили -->
+    <meta charset="UTF-8"> <!--это стандартная кодировка,который поддерживает языков и символов -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title> <!-- title можем увидит заголовок на веб странице и на браузере -->
 </head>
 
 <body>
-    <form action="sumbit" method="post"><!--Форма отправляется на адрес "sumbit" методом POST -->
-        <fieldset> <!-- Группировка элементов формы рамкой -->
-            <legend>Form</legend> <!-- Заголовок группы полей -->
+    <!--  body это содержательный элемент HTML-документа, в этом элементе текст, изображения, ссылки, 
+     таблицы и т.д который можем увидит на веб странице -->
+    <form action="sumbit" method="post"> <!-- форм содержит в себе контейнером для всех элементов формы. -->
+        <fieldset> <!-- использвуем для логической группировки элементов формы -->
+            <legend>Form</legend><!--  это элемент добавляем заголовок к группе элементов внутри fieldset. -->
 
-            <label for="name">Name</label><br> <!-- Подпись для поля имени -->
-            <input type="text" id="name" name="name" required><!-- Поле ввода имени, обязательное -->
-            <label for="email">Email</label><br> <!-- Подпись для email -->
-            <input type="email"> <!-- Поле ввода email -->
+            <label for="name">Name</label><br> <!-- связывает текстовую метку с элементом формы. -->
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label><br>
+            <input type="email">
 
-            <label for="password">Password</label><br> <!-- Подпись для пароля -->
-            <input type="password"><!-- Поле ввода пароля (скрытые символы) -->
+            <label for="password">Password</label><br>
+            <input type="password"> <!-- используется для ввода данных пользователем -->
 
-            <button type="submit">Submit</button><br> <!-- Кнопка отправки формы -->
-            <button type="reset">Reset</button> <!-- Кнопка очистки формы -->
+            <button type="submit">Submit</button><br>
+            <button type="reset">Reset</button>
+            <!--    используется для создания кнопок, которые можно настроить для различных действий, таких как отправка формы
+            или выполнение скриптов. -->
 
-            <label for="message">Message</label><br><!-- Подпись для текстового сообщения -->
-            <textarea id="message" name="message" rows="4"
-                cols="50"></textarea><br><!-- Многострочное поле ввода текста -->
-            <label for="country">Country</label><br><!-- Подпись для списка стран -->
-            <select id="country" name="country" required><br><!-- Выпадающий список стран -->
-                <option value="">Select your country</option><br> <!-- Пустой вариант по умолчанию -->
-                <option value="us">United States</option><br><!-- Вариант США -->
-                <option value="kz">Kazakhstan</option><br> <!-- Вариант Казахстан -->
-                <option value="ca">Canada</option><br><!-- Вариант Канада -->
-                <option value="uz">Uzbekistan</option><br><!-- Вариант Узбекистан -->
-                <option value="fr">Franse</option><br><!-- Вариант Франция -->
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            <!-- textarea используется для многострочного ввода текста. -->
+            <label for="country">Country</label><br>
+            <select id="country" name="country" required><br>
+                <!--  select  используется для создания выпадающего списка, который позволяет 
+                    пользователю выбирать один или несколько вариантов. -->
+                <option value="">Select your country</option><br>
+                <option value="us">United States</option><br>
+                <option value="kz">Kazakhstan</option><br>
+                <option value="ca">Canada</option><br>
+                <option value="uz">Uzbekistan</option><br>
+                <option value="fr">Franse</option><br>
 
-            </select><!-- Конец списка -->
-        </fieldset><!-- Конец группы -->
-    </form> <!-- Конец формы -->
+            </select>
+        </fieldset>
+    </form>
 </body>
 
 </html>
