@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: red;
+            /*установка цвета */
+            text-align: center;
+            /* выравниваем текст внутри элемента. */
+        }
+
+        .font-size1 {
+            /* здесь мы через font-size устанавливаем размер текста */
+            font-size: 30px;
+            font-weight: bold;
+            /* font-weight можем изменить толщину шрифта в тексте. */
+
+        }
+
+        .font-size2 {
+            font-size: 15px;
+        }
+
+        .container {
+            background-color: aquamarine;
+            /* через color установили цвет
+             а через background мы цвет вставим на фон элемента*/
+            background-image: url("./картина/image.jpg");
+            /* здесь мы загружаем картину на элемент */
+        }
+
+        div {
+            padding: 15px;
+            margin: 20px;
+            /* через margin внешние отступы элемента */
+            border: 1px solid red;
+            /* через border можем изменить стиль, ширину и цвет границы элемента. */
+        }
+
+        .box1 {
+            width: 200px;
+            /*  */
+            height: 100px;
+            overflow: hidden;
+            /*через hidden содержимое обрезается и лишняя часть становится невидимой. */
+            /* управляет тем, что происходит с текстом если оно выходит за границы блока. */
+        }
+
+
+        .box2 {
+            width: 200px;
+            height: 100px;
+            overflow: scroll;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello</h1><!-- Заголовок -->
+    <p></p>
+    <p class="font-size1">hello world</p>
+    <p class="font-size2">almaty city</p>
+    <div class="container">blok</div>
+    <div>blok</div>
+    <div>blok</div>
+
+</body>
+
+</html>
