@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--:hover курсормен наведение болган кезде жасайды  -->
+    <!-- :focus  арқылы элемент таңдалған баскан кезде олар псевдокласстар барлык элементтерге жасайды -->
+    <!-- link непосещенный ссылканың стиль -->
+    <!-- vizited Посещенне жасалған ссылканың үстін басқанда түс стиль өзгереді -->
+    <!-- active қолданамыз актировать етілген ссылкаға-->
+    <!-- first-child ата анасының 1-ші элементіне қолданамыз-->
+    <!-- last-child ата анасының  соңғы элементіне қолданамыз-->
+    <!-- nth-child элементтің реттік номерін таңдау -->
+    <!-- div элементке курсор арқылы наведение жасап <p> көре аламыз-->
+    <!-- background-color ды hover, focus түс стильн өзгерткенде қолдана аламыз -->
+    <!-- псевдокласстар ды әрқашан қос нүктемен <:> жазылады -->
+    <!--  button hover курсорға апарғанда стиль өзгереді-->
+    <!-- input focus элемент фокуста болғанда inputқа басқанда жасайды -->
+    <!-- box p first-child 1-ші элементке стиль жасайды -->
+    <!-- box p last-child соңғы элементке стиль беру жасау -->
+    <!-- box p nth-child реттік номерация (1,2,3)элементтерге стиль беру жасау-->
+    <style>
+        .button:hover {
+            background-color: #080576d8;
+            color: white;
+
+        }
+
+
+        .input:focus {
+            background-color: rgba(35, 183, 50, 0.664);
+        }
+
+
+
+        div:focus {
+            background-color: #fdfdfd;
+            color: #ffffff;
+        }
+
+
+
+        div:hover {
+            background-color: blue;
+            color: #e3dadadd;
+        }
+
+        .box {
+            width: 300px;
+            padding: 15px;
+            margin: 15px;
+            border: 2px solid-gray;
+        }
+
+        .box:hover {
+            background-color: rgba(255, 192, 250, 0.868);
+        }
+
+        .box input:focus {
+            background-color: #0fb135;
+            color: black;
+        }
+
+        .box a:hover {
+            color: red;
+        }
+
+        .box p:first-child {
+            color: green;
+            font-weight: bold;
+        }
+
+        .box p: :last-child {
+            color: purple;
+            text-decoration: underline;
+        }
+
+        .box p:nth-child(odd) {
+            background-color: gold;
+        }
+
+
+        .list__item:first-child {
+            background-color: #350fb1;
+            font-weight: bold;
+        }
+
+        .list__item:nth-child(3) {
+            background-color: #23058f;
+
+            color: #fff;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        input:hover {
+            background-color: #23058f;
+        }
+
+        .box p:first-child:hover {
+            background-color: rgb(27, 8, 109);
+        }
+
+
+        .box p:last-of-type:hover {
+            background-color: rgba(6, 90, 6, 0.541);
+        }
+
+        .box input:last-child:focus {
+            background-color: pink;
+            border: 2px solid red;
+        }
+
+
+        .list__item:first-child {
+            background-color: #350fb1;
+            color: white;
+        }
+
+        .list__item:last-child {
+            background-color: #23058f;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <button class="button">Click me</button>
+    <input class="input" type="text">
+    <div class="box">
+        <p>Первый текст</p>
+        <p>Второй текст</p>
+        <p> Третий текст </p>
+        <a href="#">Ссылка</a>
+        <input type="text">
+
+    </div>
+    <ul class="list">
+
+        <li class="list__item">Элемент 1</li>
+        <li class="list__item">Элемент 2</li>
+        <li class="list__item">Элемент 3</li>
+    </ul>
+
+
+</body>
+
+
+
+</html>
