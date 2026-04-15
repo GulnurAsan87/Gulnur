@@ -1,30 +1,61 @@
-<!DOCTYPE html><!-- В HTML элементы блочные и строчные каждый тип элемента имеет свои особенности в отношении отображения и поведения на веб-странице.
- -->
+<!DOCTYPE html>
+-->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- h1 тақырып  -->
+    <!--block бұл элемент әрқайсысы жаңа жолда тұрады -->
+    <!--inline бұл элемент бір қатарда қатар тұрады-->
+
+    <!-- .inline-to-block <a> болсада block сияқты жаңа жолға өтеді -->
+    <!-- block-to-inline <div> болса да, қатарға тұрады-->
+    <!--display - элементтің қалай орналасатынын басқарады   -->
     <style>
         .container {
             width: 100%;
             height: 80vh;
+            padding: 20px;
+            border: 1px solid black;
             background-image: url("./картина/image.jpg");
+        }
+
+        img {
+            width: 150px;
+            height: auto;
+            border: 1px solid #999;
         }
 
         h1 {
             color: rgba(44, 40, 37, 0.29);
             background-color: rgba(110, 179, 130, 0.426);
+
         }
 
         .inline-to-block {
             display: block;
+            margin-top: 10px;
+            width: 5px;
         }
 
-        /* С помощью CSS можно изменять тип отображения элементов, используя свойство display. */
+
         .block-to-inline {
             display: inline;
+            background-color: rgba(0, 0, 255, 0.785);
+        }
+
+        .container {
+
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        .block {
+            display: block;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -33,14 +64,18 @@
     <h1>Репка</h1>
     <p>Репка — русская народная сказка</p>
     <div class="container">
-        <div class="block">Это блочный элемент </div><!-- всегда начинают с новой строки и занимают 
-        всю доступную ширину. Они могут содержать как другие блочные элементы, так и строчные элементы. -->
+        <div class="block">Это блочный элемент </div>
+
         <h1 class="blok">Это блочный элемент (h1)</h1>
         <p class="block">Это блочный элемент (p)</p>
-        <a href="#" class="inline">Это строчный элемент (a)</a><!--  располагаются в строку, занимая только необходимую для их содержимого ширину. Они могут содержать только другие строчные элементы или текст.
- -->
-        <a href="#" class="inline">русская народная сказка(a)</a>
+        <a href="#" class="inline">Это строчный элемент (a)</a>
 
+        <a href="#" class="inline">русская народная сказка(a)</a>
+        <div class="container">
+            <p class="block">Абзац</p>
+            <img src="image.1.webp" class="block">
+            <a href="#" class="block">Ссылка</a>
+        </div>
     </div>
 </body>
 
