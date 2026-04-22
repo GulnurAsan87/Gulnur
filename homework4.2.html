@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--  -->
+    <style>
+        div {
+            background-color: blue;
+        }
+
+        div.inline {
+            background-color: brown;
+            display: inline;
+        }
+
+        div.flex {
+            background-color: blueviolet;
+            display: flex;
+        }
+
+        /* 4 задание */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: space-around;
+            background-color: chartreuse;
+            height: 200px;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        /* 5 задание */
+        .container5 {
+            display: flex;
+            width: 500px;
+            height: 150px;
+            border: 2px solid black;
+            background-color: lightgray;
+            margin: 10px;
+        }
+
+        .container6 {
+            display: flex;
+            width: 600px;
+            height: 120px;
+            border: 2px solid black
+        }
+
+        p {
+            background-color: red;
+            border: 1px solid black;
+            width: 60px;
+            height: 40px;
+            margin: 5px;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .item1 {
+            flex: 1 1 100px;
+            background-color: red;
+
+        }
+
+        .item2 {
+            flex: 2 1 100px;
+            background-color: blue;
+        }
+
+        .item3 {
+            flex: 1 2 100px;
+            background-color: green;
+        }
+
+        .box1 {
+            width: 50%;
+            background-color: red;
+        }
+
+        .box2 {
+            flex: 1;
+            background-color: blue;
+        }
+
+        .box3 {
+            width: 100px;
+            background-color: green;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: lightgray;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 600px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        .card {
+            flex: 1 1 150px;
+            height: 100px;
+            background: lightblue;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="block">block</div>
+    <div class="inline">Меня зовут Гульнур</div>
+    <div class="flex">flex</div>
+    <div class="container">
+        <p class="block">1</p>
+        <p class="block">2</p>
+        <p class="block">3</p>
+        <p class="block">4</p>
+        <p class="block">5</p>
+        <p class="block">6</p>
+
+    </div>
+    <div class="container5">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+
+    </div>
+    <div class="container6">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+
+    </div>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+
+
+
+    </div>
+    <div class="gallery">
+        <div class="card">1</div>
+        <div class="card">2</div>
+        <div class="card">3</div>
+        <div class="card">4</div>
+        <div class="card">5</div>
+        <div class="card">6</div>
+    </div>
+
+
+<!-- Flexbox бұл CSS тегі  контейнерге элементтерді тиімді орналасуына мүмкіндік береді -->
+
+
+
+</html>
